@@ -12,8 +12,6 @@ holdVal = None
 while command != "":
     if -1 <= (register + 1 - screenPos) <= 1:
         crt[cycles] = "█"
-    elif screenPos == 40 and -1 <= register - 39 <= 1:
-        crt[cycles] = "█"
     if screenPos == 40:
         screenPos = 0
     if (cycles - 20) % 40 == 0:
