@@ -30,6 +30,7 @@ for y in range(0, maxY):
             buildOn = range
         elif buildOn[1] + 1 >= range[0] and buildOn[1] <= range[1]:
             buildOn = (buildOn[0], range[1])
+    compressed.append(buildOn)
     if len(compressed) == 2:
         x = compressed[1][0] - 1
         print(4_000_000 * x + y)
